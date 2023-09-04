@@ -11,14 +11,23 @@ footer {
   color: white;
   max-width: 100%;
   max-height: 100%;
+  padding: 10px;
 }
 footer a {
-  color: red;
+  color: white;
   text-decoration: none;
+  margin-bottom: 15px;
+}
+footer .logo2 {
+  font-family: Shrikhand;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 10px;
 }
 footer .options {
   display: flex;
   flex-direction: row;
+  padding-left: 20px;
 }
 footer .options .fa-solid {
   display: flex;
@@ -29,6 +38,21 @@ footer .options .fa-utensils {
 }
 footer .options .fa-handshake-angle {
   margin-right: 4px;
+}
+footer .options2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Roboto;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */
