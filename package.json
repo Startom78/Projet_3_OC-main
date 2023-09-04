@@ -1,7 +1,6 @@
 {
   "name": "projet_3_oc-main",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/_main.scss:./public/css/style.css"
@@ -11,5 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.66.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
