@@ -8,8 +8,11 @@ body {
   box-sizing: border-box;
 }
 
-.logo {
+.logo-font {
   font-family: Shrikhand;
+}
+
+.logo {
   font-size: 25px;
   padding: 10px;
   text-align: center;
@@ -28,8 +31,10 @@ footer a {
   text-decoration: none;
   margin-bottom: 15px;
 }
-footer .logo2 {
-  font-family: Shrikhand;
+footer a:hover {
+  color: white;
+}
+footer .title {
   font-size: 20px;
   padding: 10px;
   margin-left: 10px;
@@ -56,7 +61,8 @@ footer .options2 {
 }
 
 * {
-  border-color: solid red 1px;
+  box-sizing: border-box;
+  border: solid red 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

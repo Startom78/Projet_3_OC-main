@@ -1,9 +1,9 @@
-@import"./base/base";
-@import"./base/desktop";
-@import"./base/mixin";
-@import"./base/variables";
-@import"./layout/header";
-@import"./layout/footer";
-@import"./layout/loader";
-@import"./pages/home";
-@import"./pages/menu";
+@import "./base/variables";
+@import "./base/base";
+@import "./base/desktop";
+@import "./base/mixin";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/loader";
+@import "./page/home";
+@import "./page/restaurant";

@@ -9,9 +9,11 @@ footer {
         color: white;
         text-decoration: none;
         margin-bottom: 15px;
+        &:hover {
+            color: white;
+        }
     }
-    .logo2 {
-        font-family: Shrikhand;
+    .title {
         font-size: 20px;
         padding: 10px;
         margin-left: 10px;
