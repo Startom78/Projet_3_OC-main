@@ -16,7 +16,7 @@
 }
 
 .description {
-    background-color: #F6F6F6;
+    background-color: $bs-color;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -45,6 +45,10 @@
 
 .explication {
     margin: 10px;
+}
+
+.explication2 {
+    background-color: $bs-color;
 }
 
 .selection {
@@ -97,5 +101,19 @@
     }
     
     
+}
+
+.resto {
+   margin-left: 10px;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: white;
+    .new {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        
+    }
 }
 

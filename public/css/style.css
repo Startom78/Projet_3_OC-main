@@ -97,6 +97,10 @@ footer .options .fa-handshake-angle {
   margin: 10px;
 }
 
+.explication2 {
+  background-color: #F6F6F6;
+}
+
 .selection {
   display: flex;
   flex-direction: column;
@@ -131,6 +135,19 @@ footer .options .fa-handshake-angle {
   width: 6%;
   position: absolute;
   left: 24px;
+}
+
+.resto {
+  margin-left: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+}
+.card .new {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
