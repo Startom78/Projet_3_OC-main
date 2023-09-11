@@ -141,12 +141,13 @@ footer .options .fa-handshake-angle {
 .explication2 figure .hearts {
   position: relative;
   width: 0px;
-  left: 89%;
+  left: 80%;
   bottom: 25%;
   font-size: 30px;
 }
-.explication2 figure .hearts .fullheart {
+.explication2 figure .fullheart {
   position: absolute;
+  font-size: 30px;
 }
 .explication2 figure .new {
   width: 100%;
