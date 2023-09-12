@@ -97,101 +97,110 @@ footer .options .fa-handshake-angle {
   margin: 10px;
 }
 
-.explication2 {
+.cards {
   display: flex;
   flex-direction: column;
   align-content: center;
   background-color: #F6F6F6;
   margin: auto;
 }
-.explication2 .nomduresto {
-  display: flex;
-  flex-direction: column;
-  padding: 0px 0px 0px 20px;
-  line-height: 8px;
-}
-.explication2 .nomduresto .fa-regular:hover {
-  transition-duration: 1000ms;
-  opacity: 0px;
-}
-.explication2 .nomduresto p {
-  margin: 0px;
-  font-size: 18px;
-}
-.explication2 .fa-regular {
-  position: absolute;
-  font-size: 30px;
-  opacity: 1px;
-  background-color: white;
-}
-.explication2 .resto {
-  margin-left: 10px;
-}
-.explication2 figure {
-  padding: 0px;
-  background-color: white;
-}
-.explication2 figure a {
+.cards a {
   background-color: white;
   color: black;
   text-decoration: none;
   border-radius: 32px;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  overflow: hidden;
 }
-.explication2 figure .hearts {
-  position: relative;
-  width: 0px;
-  left: 80%;
-  bottom: 25%;
-  font-size: 30px;
+.cards a .card {
+  padding: 0px;
 }
-.explication2 figure .fullheart {
+.cards a .card .new::after {
+  display: block;
+  content: "nouveau";
+  width: auto;
+  height: auto;
   position: absolute;
-  font-size: 30px;
+  right: 10px;
+  top: 10px;
 }
-.explication2 figure .new {
+.cards a .card img {
   width: 100%;
-  height: 33%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-style: none;
+  height: 231px;
   object-fit: cover;
+  position: relative;
+}
+.cards a .card .nomduresto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 0px 0px 15px;
+  line-height: 8px;
+}
+.cards a .card .nomduresto .description {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.cards a .card .nomduresto .hearts {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.cards a .card .nomduresto .hearts .fullheart {
+  transition: opacity 0.25s ease-in-out;
+  right: 0px;
+  position: absolute;
+}
+.cards a .card .nomduresto .hearts .heart-2 {
+  color: #9356DC;
+  opacity: 0;
+}
+.cards a .card .nomduresto .hearts .heart-2:hover {
+  opacity: 1;
+}
+.cards a .card .nomduresto p {
+  margin: 0px;
+  font-size: 18px;
 }
 
-.selection {
+.selection_table {
   display: flex;
   flex-direction: column;
   margin: 0px 20px 50px 20px;
   gap: 20px;
 }
-.selection .selection2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.selection_row {
   background-color: #F6F6F6;
   font-size: 16px;
   border-radius: 20px;
   box-shadow: 0px 5px 0px 0px #000000;
 }
-.selection .selection2 .fa-solid {
-  color: #7E7E7E;
-  position: absolute;
-  left: 60px;
+.selection_row .selection_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  transform: translateX(-12px);
 }
-.selection .selection2 .fa-solid:hover {
+.selection_row .selection_container .fa-solid {
+  color: #7E7E7E;
+}
+.selection_row .selection_container .fa-solid:hover {
   color: #9356DC;
 }
-.selection .selection2 .number {
-  display: flex;
+.selection_row .selection_container .number {
   background-color: #9356DC;
   color: white;
   display: flex;
   justify-content: center;
-  border-radius: 50% 50% 50% 50%;
-  width: 6%;
-  position: absolute;
-  left: 24px;
+  align-items: center;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

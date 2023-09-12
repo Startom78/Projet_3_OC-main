@@ -47,134 +47,158 @@
     margin: 10px;
 }
 
-.explication2 {
+.cards {
     display: flex;
     flex-direction: column;
     align-content: center;
     background-color: $bs-color;
     margin: auto;
-
-    .nomduresto {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 0px 0px 20px;
-        line-height: 8px;
-
-
-        .fa-regular:hover {
-            transition-duration: 1000ms;
-            opacity: 0px;
-        }
-
-        p {
-            margin: 0px;
-            font-size: 18px;
-        }
-    }
-
-    .fa-regular {
-        position: absolute;
-        font-size: 30px;
-        opacity: 1px;
+    
+    a {
         background-color: white;
-    }
-    .resto {
-       margin-left: 10px;
-    }
-    
+        color: black;
+        text-decoration: none;
+        border-radius: 32px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+        overflow: hidden;
 
-    figure {
+        .card{
+            padding: 0px;
+
+            .new::after {
+                display: block;
+                content: "nouveau";
+                width: auto;
+                height: auto;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                
+            }
+
+            img {
+                width: 100%;
+                height: 231px;
+                object-fit: cover;
+                position: relative;
+
+            }
         
-        padding: 0px;
-        background-color: white;
-    
-        a {
-            background-color: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 32px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
-        }
-    
-        .hearts {
-            position: relative;
-            width: 0px;
-            left: 80%;
-            bottom: 25%;
-            font-size: 30px;
-    
-        }
-
-        .fullheart {
-            position: absolute;
-            font-size: 30px;
-
-        }
-        
-        .new {
-            width: 100%;
-            height: 33%;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-style: none;
-            object-fit: cover;
             
-        }
+            
+            
+            .nomduresto {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0px 0px 0px 15px;
+                line-height: 8px;
+
+                .description{
+                    display: flex;
+                    justify-content: left;
+                    align-items: left;
+                }
+                
+                .hearts {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    font-size: 30px;
+                    margin-right: 10px;
+                    
+                    .fullheart {
+                        transition: opacity 0.25s ease-in-out;
+                        right: 0px;
+                        position: absolute;
+                    }
+
+                    .heart-2 {
+
+                        color: #9356DC;
+                        opacity: 0;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+        
+                p {
+                    margin: 0px;
+                    font-size: 18px;
+                }
+            }
     
+        }
     }
 }
 
 .selection {
-
-    display: flex;
-    flex-direction: column;
-    margin : 0px 20px 50px 20px;
-    gap: 20px;
-    
-    
-
-    .selection2 {
-
+    &_table {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        margin : 0px 20px 50px 20px;
+        gap: 20px;
+        
+    } 
+    
+    
+    
+    
+    &_row {
+
         background-color: #F6F6F6;
+        //position: relative;
         font-size: 16px;
         border-radius: 20px;
         box-shadow: 0px 5px 0px 0px #000000;
         
-
-
-        .fa-solid {
-            color: #7E7E7E;
-            position: absolute;
-            left: 60px;
+        & .selection_container {
             
-        }
-
-        .fa-solid:hover{
-            color: #9356DC;
-        }
-        .number {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            //position: absolute;
+            gap: 20px;
+            transform: translateX(-12px);
+            //left: -10px;
+            
+            .fa-solid {
+                color: #7E7E7E;
+                // left: 60px;
+                
+            }
+            
+            .fa-solid:hover{
+                color: #9356DC;
+            }
+            .number {
         
-            display: flex;
-            background-color: #9356DC;
-            color: white;
-            display: flex;
-            justify-content: center;
-            border-radius: 50% 50% 50% 50%;
-            width: 6%;
-            position: absolute;
-            left: 24px;
-             
+                background-color: #9356DC;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                //position: absolute;
+                //left: 24px;
+                 
+            }
+    
         }
+        
+        
+        
 
         
     }
     
-    
 }
+    
 
 
 
