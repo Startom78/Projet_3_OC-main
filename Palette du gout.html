@@ -20,15 +20,16 @@
 
     <body>
         <header>
-            <div class="logo">
+
+            <h1 class="logo logo-font">
                 OhMyFood
-            </div>
+            </h1>
     
         </header>
 
-        <main>
+        <main class="menu">
 
-            <!--  insérer l'image ici (fait) --> <!-- <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/La palette du goût.jpg" alt="La palette du gout" /> -->
+         <img class="new" src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/La palette du goût.jpg" alt="La palette du gout" />
 
             <section>
 
@@ -36,18 +37,16 @@
 
                     <h1> La palette du goût </h1>
 
-                    <div class="like"> <!-- TODO remplacer la ou il y a les coeurs sur l'index -->
-
-                        <i class="primary fa-regular fa-heart"></i>
-                        <i class="secondary fa-regular fa-heart"></i>
-
+                    <div class="hearts">
+                        <i class="fa-solid fa-heart fullheart"></i>
+                        <i class="fa-solid fa-heart fullheart heart-2"></i>
                     </div>
 
                 </div>
 
                 <section>
 
-                    <h2> Entrées </h2>
+                    <h2 class="title"> Entrées </h2>
                     <!-- insérer la barre verte dans le css -->
                     <div>
 
@@ -74,7 +73,7 @@
                         <div>
     
                             <h3> Oeuf au plat  </h3>
-                            <p> Assaisoné à la truffe sur lit de caviar  </p>
+                            <p> Assaisonné à la truffe sur lit de caviar  </p>
                             <p> 20€ </p>
     
                         </div>
@@ -85,7 +84,7 @@
 
                 <section>
 
-                    <h2> Plats </h2>
+                    <h2 class="title"> Plats </h2>
                     <div>
                     
                         <!-- insérer petite barre verte avec le css -->
@@ -120,7 +119,7 @@
 
                 <section>
 
-                    <h2> Desserts </h2>
+                    <h2 class="title"> Desserts </h2>
                     <!-- insérer la barre verte ici -->
                     <div> 
 
@@ -152,46 +151,57 @@
 
                 </section>
 
-                <button> Commander </button>
+                <button class="bouton"> Commander </button>
 
             </section>
 
         </main>
 
-        <footer> 
+        <footer>
 
-            <h2> Ohmyfood </h2>
-
+            <h2 class="title logo-font"> Ohmyfood </h2>
+    
             <div>
-                <div>
-                    
-                    
+                <div class="options">
+    
+    
                     <i class="fa-solid fa-utensils"></i>
-                    <a href="#"> 
-                        proposer un restaurant
-                    </a> 
-                    
+                    <a href="#">
+                        Proposer un restaurant
+                    </a>
+    
                 </div>
-                
-                <div> 
-
+    
+    
+                <div class="options">
+    
                     <i class="fa-solid fa-handshake-angle"></i>
                     <a href="#">
-                        Devenir partenaire 
+                        Devenir partenaire
                     </a>
-                </div>   
-
-                <a href="#" >
-                    Mentions légales 
-                </a>
-
-                <a href="#">
-                    Contact 
-                </a>
+    
+                </div>
+    
+    
+                <div class="options">
+    
+                    <a href="#">
+                        Mentions légales
+                    </a>
+    
+                </div>
+    
+                <div class="options">
                     
+                    <a href="mailto:uneaddresserandom@gmail.com">
+                        Contact
+                    </a>
+                </div>
+                
             </div>
     
         </footer>
+    
 
     </body>
     
