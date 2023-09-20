@@ -121,34 +121,6 @@
                     line-height: 6px;
                     
                 }
-                
-                .hearts {
-                    display: flex;
-                    align-items: center;
-                    position: relative;
-                    font-size: 30px;
-                    margin-right: 10px;
-                    
-                    .fullheart {
-                        transition: opacity 0.25s ease-in-out;
-                        right: 0px;
-                        background: rgb(255,121,218);
-                        background: linear-gradient(0deg, rgba(255,121,218,1) 35%, rgba(147,86,220,1) 100%);
-                        position: absolute;
-
-                    }
-
-                    .heart-2 {
-
-                        //color: #9356DC;
-                        opacity: 0;
-
-                        &:hover {
-                            opacity: 1;
-                        }
-                    }
-
-                }
         
                 p {
                     margin: 0px;

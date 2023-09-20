@@ -1,0 +1,42 @@
+
+.hearts {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 30px;
+    margin-right: 10px;
+    
+    .fullheart {
+        color: white;
+        -moz-text-stroke-width: 1px;
+        -moz-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+                                
+        transition: opacity 0.25s ease-in-out;
+        right: 0px;
+        //background: rgb(255,121,218);
+        position: absolute;
+
+    }
+
+    .heart-2 {
+        background: linear-gradient(0deg, rgba(255,121,218,1) 35%, rgba(147,86,220,1) 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -moz-text-stroke-width: 1px;
+        -moz-text-stroke-color: #9356DC;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #9356DC;
+
+        text-shadow: unset;
+        color: transparent;
+        //color: #9356DC;
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
