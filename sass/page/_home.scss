@@ -21,6 +21,16 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+
+    & h2 {
+        margin-top: 10px;
+    }
+
+    & p {
+        margin-top: 10px;
+    }
+    
+
     
 }
 
@@ -38,13 +48,21 @@
     margin-bottom: 40px;
     background: rgb(147,86,220);
     background: linear-gradient(0deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
-    box-shadow: 0px 5px 0px 0px #000000;
+    @include shadow-box;
+    
 
-   
 }
 
 .explication {
     margin: 10px;
+
+    .selection_table {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .selection_container {
+        height: 72px;
+    }
 }
 
 .cards {
@@ -53,23 +71,22 @@
     align-content: center;
     background-color: $bs-color;
     margin: auto;
+    margin: 0px 10px 0px 10px;
 
-    .resto {
-        margin-left: 40px;
-    }
+
     
     a {
         background-color: white;
         color: black;
         text-decoration: none;
         border-radius: 32px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+        @include shadow-box;
         overflow: hidden;
 
         .card{
             padding: 0px;
             border-radius: 15px;
-            box-shadow: 0px 5px 0px 0px #000000;
+            @include shadow-box;
             overflow: hidden;
             position: relative;
 
@@ -102,8 +119,9 @@
                 color: #008766;
                 width: 80px;
                 height: 29px;
-                top: 10%;
-                left: 70%;
+                top: 1rem;
+                right: 1rem;
+                
 
             }          
             .nomduresto {
@@ -117,8 +135,8 @@
                     display: flex;
                     align-items: flex-start;
                     text-align: left;
-                    margin : 0px 0px 10px 0px;
-                    line-height: 6px;
+                    margin : 10px 0px 10px 0px;
+                    //line-height: 6px;
                     
                 }
         
@@ -150,7 +168,7 @@
         //position: relative;
         font-size: 16px;
         border-radius: 20px;
-        box-shadow: 0px 5px 0px 0px #000000;
+        @include shadow-box;
         
         & .selection_container {
             
