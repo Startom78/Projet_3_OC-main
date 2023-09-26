@@ -83,32 +83,38 @@
         @include shadow-box;
         overflow: hidden;
 
-        .card{
+        & .card{
             padding: 0px;
             border-radius: 15px;
             @include shadow-box;
             overflow: hidden;
             position: relative;
 
-            .new::after {
-                display: block;
-                content: "nouveau";
+            &.new:after {
+                position: absolute;
                 width: auto;
                 height: auto;
-                position: absolute;
-                right: 10px;
-                top: 10px;
-                
+                right: 1rem;
+                top: 1rem;
+
+                display: block;
+                content: "Nouveau";
+                font-size: 18px;
+                padding: 4px 6px;
+
+                border-radius: 5px;
+                background-color:#99E2D0;
+                color: #008766;
             }
 
-            img {
+            & img {
                 width: 100%;
                 height: 231px;
                 object-fit: cover;
                 position: relative;
-
             }
-            .discovery {
+
+            & .discovery {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -121,10 +127,9 @@
                 height: 29px;
                 top: 1rem;
                 right: 1rem;
-                
+            }
 
-            }          
-            .nomduresto {
+            & .nomduresto {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
