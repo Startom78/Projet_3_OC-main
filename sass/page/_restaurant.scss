@@ -1,8 +1,15 @@
 * {
     box-sizing: border-box;
-    border: solid red 1px;
+    //border: solid red 1px;
     
 }
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 h1 {
     font-family: Shrikhand;
@@ -25,49 +32,62 @@ img {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     margin-top: -50px;
+    padding: 25px;
 
     .nomduresto2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 10px;
+        margin: 20px 0 0 10px;
 
-
+        .big_title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: Shrikhand;
+            margin-left: -10px;
+        }  
+    }
+    .hearts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 25px;
     }
 
-    .title {
-        font-family: Roboto;
-        font-size: 16px;
-        border-bottom: solid 3px #99E2D0;
-        width: 40px;
-        height: 30px;
-    }
-}
+    .entrees {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+ 
 
-/*
-.hearts {
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-size: 30px;
-    margin-right: 10px;
+        .title {
+            font-family: Roboto;
+            font-size: 16px;
+            border-bottom: solid 3px #99E2D0;
+            width: 40px;
+            height: 30px;
     
-    .fullheart {
-        transition: opacity 0.25s ease-in-out;
-        right: 0px;
-        position: absolute;
-    }
-
-    .heart-2 {
-
-        color: #9356DC;
-        //background: rgb(255,121,218);
-        //background: linear-gradient(0deg, rgba(255,121,218,1) 35%, rgba(147,86,220,1) 100%);
-        opacity: 0;
-
-        &:hover {
-            opacity: 1;
+        }
+        .flex {
+            width: 100%;
+            margin: 20px 0 20px 0;
+            padding-left: 10px;
+            background-color: white;
+            border-radius: 15px;
+            @include shadow-box;
+    
+    
+    
         }
     }
+
+    .commander_bouton {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
 }
-*/
