@@ -1,18 +1,9 @@
 * {
     box-sizing: border-box;
     //border: solid red 1px;
+    margin: 0;
+    padding: 0;
     
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-h1 {
-    font-family: Shrikhand;
 }
 
 img {
@@ -38,14 +29,14 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 20px 0 0 10px;
+        margin-top: 20px;
 
         .big_title {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             font-family: Shrikhand;
-            margin-left: -10px;
+            //margin-left: -10px;
         }  
     }
     .hearts {
@@ -65,9 +56,14 @@ img {
         .title {
             font-family: Roboto;
             font-size: 16px;
-            border-bottom: solid 3px #99E2D0;
-            width: 40px;
-            height: 30px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 40px;
+                border-bottom: solid 3px #99E2D0;
+
+            }
     
         }
         .flex {

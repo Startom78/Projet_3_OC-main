@@ -51,11 +51,20 @@ body {
 }
 
 .logo {
-  font-size: 25px;
-  padding: 0px;
-  margin: 10px;
+  position: relative;
+  height: 60px;
+  padding: 10px;
+}
+.logo .fa-arrow-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1 {
   text-align: center;
-  max-width: auto;
+  font-family: Shrikhand;
+  font-size: 25px;
 }
 
 footer {
@@ -260,16 +269,8 @@ footer .options .fa-handshake-angle {
 
 * {
   box-sizing: border-box;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-h1 {
-  font-family: Shrikhand;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -293,14 +294,13 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 0 0 10px;
+  margin-top: 20px;
 }
 .menu .nomduresto2 .big_title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-family: Shrikhand;
-  margin-left: -10px;
 }
 .menu .hearts {
   display: flex;
@@ -317,9 +317,12 @@ img {
 .menu .entrees .title {
   font-family: Roboto;
   font-size: 16px;
-  border-bottom: solid 3px #99E2D0;
+}
+.menu .entrees .title::after {
+  content: "";
+  display: block;
   width: 40px;
-  height: 30px;
+  border-bottom: solid 3px #99E2D0;
 }
 .menu .entrees .flex {
   width: 100%;

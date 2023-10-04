@@ -1,7 +1,19 @@
 .logo {
-    font-size: 25px;
-    padding: 0px;
-    margin: 10px;
+    position: relative;
+    height: 60px;
+    padding: 10px;
+
+    .fa-arrow-left {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+    
+}
+
+h1 {
     text-align: center;
-    max-width: auto;
+    font-family: Shrikhand;
+    font-size: 25px;
 }
