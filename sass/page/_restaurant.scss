@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    //border: solid red 1px;
+    border: solid red 1px;
     margin: 0;
     padding: 0;
     
@@ -77,6 +77,34 @@ img {
     
     
         }
+
+        .menu_plat_prix {
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: end;
+            font-weight: bold;
+
+            
+        } 
+
+        .check {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 59px;
+            height: 69px;
+            background-color: #99E2D0;
+
+            & .fa-circle-check {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: red;
+            } 
+        } 
+
     }
 
     .commander_bouton {
