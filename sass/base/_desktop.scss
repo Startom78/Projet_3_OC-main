@@ -1,0 +1,48 @@
+@media  screen and (min-width: 1024px) {
+
+  body {
+
+    .bouton {
+        width: auto;
+    }
+
+    .explication {
+        margin: 50px 100px 50px 100px;
+
+        .title_fonctionnement {
+            margin-top: 20px;
+        }
+    }
+
+    .selection_table {
+        flex-direction: row;
+        justify-content: space-between;
+        //width: 100%;
+    }
+
+    .cards {
+        margin: 0px;
+        
+        .resto {
+            margin: 20px 100px 20px 100px;
+        }
+        
+        .all_card {
+            
+            flex-direction: row;
+            flex: wrap;
+            width: 40%;
+            margin-left: 100px;
+        }
+
+    }
+    
+  } 
+  
+  footer {
+
+
+  }
+
+    
+}
