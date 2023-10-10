@@ -378,7 +378,6 @@ img {
 }
 .menu .entrees .menu_plat_text .menu_plat_description {
   width: 100%;
-  background-color: blue;
 }
 .menu .entrees .menu_plat_text .menu_plat_description * {
   height: 50%;
@@ -394,7 +393,6 @@ img {
   font-weight: bold;
   width: 60px;
   height: 100%;
-  background-color: green;
 }
 .menu .entrees .menu_checkbox {
   position: absolute;
