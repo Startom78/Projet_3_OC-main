@@ -80,13 +80,12 @@
         background-color: #F6F6F6;
         color: black;
         text-decoration: none;
-        border-radius: 32px;
+        border-radius: 1rem;
         @include shadow-box;
         overflow: hidden;
 
         & .card{
             padding: 0px;
-            border-radius: 15px;
             @include shadow-box;
             overflow: hidden;
             position: relative;
