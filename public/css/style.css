@@ -30,6 +30,7 @@ body {
   body .selection_table {
     flex-direction: row;
     justify-content: space-between;
+    font-weight: bold;
   }
   body .cards {
     margin: 0px;
@@ -174,6 +175,11 @@ footer .options .fa-handshake-angle {
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.bouton:hover {
+  opacity: 0.8;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
 }
 
 .explication {
@@ -323,7 +329,7 @@ img {
 .menu .nomduresto2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
 .menu .nomduresto2 .big_title {
@@ -400,7 +406,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 59px;
+  width: 69px;
   height: 100%;
   background-color: #99E2D0;
   overflow: hidden;

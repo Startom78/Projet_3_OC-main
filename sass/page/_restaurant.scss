@@ -28,7 +28,8 @@ img {
     .nomduresto2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        //align-items: space-between;
         margin-top: 20px;
 
         .big_title {
@@ -125,7 +126,7 @@ img {
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            width: 59px;
+            width: 69px;
             height: 100%;
             background-color: #99E2D0;
             overflow: hidden;

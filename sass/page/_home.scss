@@ -51,6 +51,12 @@
     background: rgb(147,86,220);
     background: linear-gradient(0deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
     @include shadow-box;
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0 8px 15px rgb(0, 0, 0, 0.6);
+        transition: 0.5s;
+    
+    }
 
 }
 
