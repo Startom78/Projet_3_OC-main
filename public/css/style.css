@@ -175,11 +175,11 @@ footer .options .fa-handshake-angle {
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 .bouton:hover {
   opacity: 0.8;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
-  transition: 0.5s;
 }
 
 .explication {
