@@ -22,7 +22,11 @@ body {
     width: auto;
   }
   body .explication {
-    margin: 50px 100px 50px 100px;
+    display: block;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 0 100px;
+    width: 100%;
   }
   body .explication .title_fonctionnement {
     margin-top: 20px;
@@ -31,6 +35,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     font-weight: bold;
+    max-width: 850px;
+    margin: 20px 10px;
   }
   body .cards {
     margin: 0px;
@@ -48,8 +54,9 @@ body {
     row-gap: 20px;
   }
   body .menu {
-    margin-left: 100px;
-    margin-right: 100px;
+    max-width: 1000px;
+    width: 100%;
+    margin: -50px auto;
   }
   body .entrees {
     margin-left: 100px;
@@ -59,7 +66,22 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    margin-right: 150px;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 12px;
+  }
+  footer .all_footer .title {
+    order: 1;
+    font-size: 14px;
+    margin-left: 100px;
+  }
+  footer .all_footer .options {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  footer .all_footer .options a {
+    margin-top: 14px;
   }
   footer .all_footer .mention_contact {
     display: flex;
@@ -85,7 +107,7 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   transition: opacity 0.25s ease-in-out;
-  right: 0px;
+  right: -80px;
   position: absolute;
 }
 .hearts .heart-2 {
@@ -192,7 +214,7 @@ footer .options .fa-handshake-angle {
   padding: 15px 15px 15px 15px;
   margin: 10px 10px 10px 10px;
   border-radius: 20px;
-  width: 50%;
+  width: auto;
   margin-top: 20px;
   margin-bottom: 40px;
   background: rgb(147, 86, 220);
@@ -209,7 +231,8 @@ footer .options .fa-handshake-angle {
   margin: 10px;
 }
 .explication .selection_table {
-  margin: 20px 0px 20px 0px;
+  margin: 20px auto;
+  padding: 0 10px;
 }
 .explication .selection_container {
   height: 72px;
@@ -222,6 +245,9 @@ footer .options .fa-handshake-angle {
   background-color: #F6F6F6;
   margin: auto;
   margin: 0px 10px 0px 10px;
+}
+.cards .resto {
+  margin: 20px 0 20px 0;
 }
 .cards a {
   background-color: #F6F6F6;

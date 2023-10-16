@@ -45,7 +45,7 @@
     padding: 15px 15px 15px 15px;
     margin: 10px 10px 10px 10px;
     border-radius: 20px;
-    width: 50%;
+    width: auto;
     margin-top: 20px;
     margin-bottom: 40px;
     background: rgb(147,86,220);
@@ -63,8 +63,10 @@
 .explication {
     margin: 10px;
 
+
     .selection_table {
-        margin: 20px 0px 20px 0px;
+        margin: 20px auto;
+        padding: 0 10px;
     }
 
     .selection_container {
@@ -79,6 +81,10 @@
     background-color: $bs-color;
     margin: auto;
     margin: 0px 10px 0px 10px;
+
+    .resto {
+        margin: 20px 0 20px 0;
+    }
 
 
     
@@ -95,6 +101,7 @@
             @include shadow-box;
             overflow: hidden;
             position: relative;
+            
 
             &.new:after {
                 position: absolute;
