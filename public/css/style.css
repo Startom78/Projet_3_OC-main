@@ -47,6 +47,29 @@ body {
     column-gap: 20px;
     row-gap: 20px;
   }
+  body .menu {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  body .entrees {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  footer .all_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 150px;
+  }
+  footer .all_footer .mention_contact {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+  }
+  footer .title {
+    display: flex;
+    justify-content: end;
+  }
 }
 .hearts {
   display: flex;
@@ -304,7 +327,6 @@ footer .options .fa-handshake-angle {
 
 * {
   box-sizing: border-box;
-  border: solid red 1px;
   margin: 0;
   padding: 0;
 }
