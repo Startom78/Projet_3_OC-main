@@ -107,7 +107,6 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   transition: opacity 0.25s ease-in-out;
-  right: -80px;
   position: absolute;
 }
 .hearts .heart-2 {
@@ -377,8 +376,14 @@ img {
 .menu .nomduresto2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 2rem;
   margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu .nomduresto2 {
+    justify-content: center;
+  }
 }
 .menu .nomduresto2 .big_title {
   display: flex;
@@ -424,20 +429,22 @@ img {
 }
 .menu .entrees .menu_plat_text {
   display: inline-flex;
-  align-items: space-between;
-  padding: 5px;
+  align-items: flex-start;
+  padding: 15px 5px;
   width: 100%;
   height: 100%;
   transition: width 0.25s ease-in-out;
 }
 .menu .entrees .menu_plat_text .menu_plat_description {
-  width: 100%;
+  width: calc(100% - 60px);
 }
 .menu .entrees .menu_plat_text .menu_plat_description * {
   height: 50%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu .entrees .menu_plat_text .menu_plat_description > p {
-  display: flex;
   align-items: flex-end;
 }
 .menu .entrees .menu_plat_text .menu_plat_prix {
@@ -446,7 +453,7 @@ img {
   align-items: flex-end;
   font-weight: bold;
   width: 60px;
-  height: 100%;
+  height: 42px;
 }
 .menu .entrees .menu_checkbox {
   position: absolute;
@@ -464,6 +471,10 @@ img {
       align-items: center;
       color: red;
   } */
+}
+.menu .fa-circle-check {
+  color: white;
+  font-size: 25px;
 }
 .menu .commander_bouton {
   display: flex;
