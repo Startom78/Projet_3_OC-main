@@ -427,6 +427,10 @@ img {
 .menu .entrees .menu_plat:hover > .menu_plat_text {
   width: calc(100% - 65px);
 }
+.menu .entrees .menu_plat:hover .fa-circle-check {
+  transform: rotate(360deg);
+  transition-duration: 1000ms;
+}
 .menu .entrees .menu_plat_text {
   display: inline-flex;
   align-items: flex-start;
@@ -465,16 +469,55 @@ img {
   height: 100%;
   background-color: #99E2D0;
   overflow: hidden;
-  /*& .fa-circle-check {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      color: red;
+  /*&:hover .fa-circle-check{
+
+      transform: rotate(360deg);
+      transition-duration: 1000ms;
+
   } */
 }
-.menu .fa-circle-check {
+.menu .entrees .menu_checkbox .fa-circle-check {
   color: white;
   font-size: 25px;
+}
+.menu .beginning {
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-delay: 30ms;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu .middle {
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-delay: 30ms;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu .ending {
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-delay: 30ms;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .menu .commander_bouton {
   display: flex;

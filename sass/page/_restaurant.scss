@@ -25,17 +25,15 @@ img {
     border-top-right-radius: 50px;
     margin-top: -50px;
     padding: 25px;
-
+    
     .nomduresto2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        //margin-right: 4rem;
-        //align-items: space-between;
         gap: 2rem;
         margin-top: 20px;
         @media screen and (min-width: 768px) {
-
+            
             justify-content: center;
             
         }
@@ -61,7 +59,6 @@ img {
         justify-content: space-between;
         margin-top: 20px;
  
-
         .title {
             font-family: Roboto;
             font-size: 16px;
@@ -88,6 +85,11 @@ img {
             overflow: hidden;
             &:hover > .menu_plat_text {
                 width: calc(100% - 65px);
+            }
+            &:hover .fa-circle-check {
+
+                transform: rotate(360deg);
+                transition-duration: 1000ms;
             }
         }
         
@@ -142,22 +144,75 @@ img {
             height: 100%;
             background-color: #99E2D0;
             overflow: hidden;
+            .fa-circle-check {
+                
+                color: white;
+                font-size: 25px;
+                
+            }
+            
+            /*&:hover .fa-circle-check{
+                
+                transform: rotate(360deg);
+                transition-duration: 1000ms;
 
-            /*& .fa-circle-check {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                color: red;
             } */
+            
         } 
-
+        
     }
 
-    .fa-circle-check {
+    .beginning {
 
-        color: white;
-        font-size: 25px;
+        animation-name: fadein;
+        animation-duration: 1.5s;
+        animation-delay: 30ms;
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
     }
+
+    .middle {
+
+        animation-name: fadein;
+        animation-duration: 1.5s;
+        animation-delay: 30ms;
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .ending {
+
+        animation-name: fadein;
+        animation-duration: 1.5s;
+        animation-delay: 30ms;
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+    
 
     .commander_bouton {
         display: flex;
