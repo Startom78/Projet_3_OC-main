@@ -1,15 +1,62 @@
 .loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF8;
+    margin: 0;
+    z-index: 10000;
+    animation: fadeout 3s linear forwards;
+    @keyframes fadeout {
 
-display: flex;
-text-align: center;
-justify-content: center;
-border: solid 1px green;
-width: 500px;
-margin: 20px;
-height: 20px;
-border-radius: 10px;
+        0% {
+            opacity: 1;
+        }
+
+        90% {
+            opacity: 1;
+        }
+
+        99% {
+            opacity: 0;
+            transform: scale(1);
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(0);
+            
+        }
+
+    }
+
+    .circle {
+
+        width: 300px;
+        height: 300px;
+        border: none;
+        border-left: 10px solid #99E2D0;
+        border-top: 10px solid #89C8FA;
+        border-right: 10px solid #9356DC;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+
+        @keyframes spin {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
 
 
-
+    }
 
 }

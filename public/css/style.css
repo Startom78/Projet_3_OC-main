@@ -38,6 +38,10 @@ body {
     max-width: 850px;
     margin: 20px 10px;
   }
+  body .selection_container {
+    font-size: 12px;
+    padding-right: 50px;
+  }
   body .cards {
     margin: 0px;
     margin-bottom: 30px;
@@ -125,6 +129,28 @@ body {
   opacity: 1;
 }
 
+.bouton {
+  background-color: #9356DC;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 20px;
+  width: auto;
+  min-width: 185px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.bouton:hover {
+  opacity: 0.8;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
 .logo {
   position: relative;
   height: 60px;
@@ -179,14 +205,53 @@ footer .options .fa-handshake-angle {
 }
 
 .loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   text-align: center;
   justify-content: center;
-  border: solid 1px green;
-  width: 500px;
-  margin: 20px;
-  height: 20px;
-  border-radius: 10px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5333333333);
+  margin: 0;
+  z-index: 10000;
+  animation: fadeout 3s linear forwards;
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+.loader .circle {
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-left: 10px solid #99E2D0;
+  border-top: 10px solid #89C8FA;
+  border-right: 10px solid #9356DC;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
 * {
@@ -214,27 +279,6 @@ footer .options .fa-handshake-angle {
 }
 .description p {
   margin-top: 10px;
-}
-
-.bouton {
-  background-color: #9356DC;
-  border: none;
-  color: white;
-  margin-bottom: 10px;
-  padding: 15px 15px 15px 15px;
-  margin: 10px 10px 10px 10px;
-  border-radius: 20px;
-  width: auto;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-}
-.bouton:hover {
-  opacity: 0.8;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
 }
 
 .explication {
@@ -495,7 +539,6 @@ img {
   animation-name: fadein;
   animation-duration: 1.5s;
   animation-delay: 30ms;
-  animation-fill-mode: both;
 }
 @keyframes fadein {
   0% {
