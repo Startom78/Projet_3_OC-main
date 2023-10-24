@@ -243,7 +243,7 @@ footer .options .fa-handshake-angle {
   border-top: 10px solid #89C8FA;
   border-right: 10px solid #9356DC;
   border-radius: 50%;
-  animation: spin 2s linear infinite;
+  animation: spin 0.5s linear infinite;
 }
 @keyframes spin {
   0% {
