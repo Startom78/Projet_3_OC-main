@@ -518,6 +518,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 69px;
   height: 100%;
   background-color: #99E2D0;

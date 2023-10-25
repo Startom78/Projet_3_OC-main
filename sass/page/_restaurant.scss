@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    //border: solid red 1px;
 }
 
 img {
@@ -114,6 +115,7 @@ img {
 
         .menu_checkbox {
             @include inline-flex-row-center-center;
+            position: absolute;
             width: 69px;
             height: 100%;
             background-color: $tertiaire;
