@@ -1,16 +1,16 @@
 
 footer {
-    background-color: #353535;
-    color:white;
+    background-color: $color-footer;
+    color:$number;
     max-width: 100%;
     max-height: 100%;
     padding: 10px;
     a {
-        color: white;
+        color: $number;
         text-decoration: none;
         margin-bottom: 15px;
         &:hover {
-            color: white;
+            color: $number;
         }
     }
     .title {
@@ -19,14 +19,12 @@ footer {
         margin-left: 10px;
     }
     .options {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         padding-left: 20px;
 
 
         .fa-solid {
-            display: flex;
-            flex-direction: row;
+            @include flex-row;
            
         }
         .fa-utensils {

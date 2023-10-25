@@ -1,26 +1,20 @@
 * {
     box-sizing: border-box;
-    //border: solid red 1px;
     
 }
 
 .location {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center ;
+    @include flex-row-center;
+    align-items: center;
     background-color: #EAEAEA;
     gap: 15px;    
     
 }
 
 .description {
+    @include flex-column-center-center;
     background-color: $bs-color;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
 
     & h2 {
         margin-top: 10px;
@@ -33,9 +27,6 @@
 
     
 }
-
-
-
 
 .explication {
     margin: 10px;
@@ -53,9 +44,7 @@
 }
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    @include flex-column;
     background-color: $bs-color;
     margin: auto;
     margin: 0px 10px 0px 10px;
@@ -67,16 +56,16 @@
 
     
     a {
-        background-color: #F6F6F6;
+        @include shadow-box;
+        background-color: $bs-color;
         color: black;
         text-decoration: none;
         border-radius: 1rem;
-        @include shadow-box;
         overflow: hidden;
 
         & .card{
-            padding: 0px;
             @include shadow-box;
+            padding: 0px;
             overflow: hidden;
             position: relative;
             
@@ -94,8 +83,8 @@
                 padding: 4px 6px;
 
                 border-radius: 5px;
-                background-color:#99E2D0;
-                color: #008766;
+                background-color: $tertiaire;
+                color: $nouveau;
             }
 
             & img {
@@ -106,14 +95,13 @@
             }
 
             & .discovery {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+
+                @include flex-center-justify-center;
                 position: absolute;
                 font-size: 14px;
                 border-radius: 5px;
-                background-color:#99E2D0;
-                color: #008766;
+                background-color: $tertiaire;
+                color: $nouveau;
                 width: 80px;
                 height: 29px;
                 top: 1rem;
@@ -121,18 +109,12 @@
             }
 
             & .nomduresto {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                @include flex-row-space-between;
                 padding: 0px 0px 0px 15px;
-                //line-height: 8px;
 
                 .description{
-                    display: flex;
-                    align-items: flex-start;
-                    text-align: left;
+                    @include flex-flex-start-left;
                     margin : 10px 0px 10px 0px;
-                    //line-height: 6px;
                     
                 }
         
@@ -148,51 +130,38 @@
 
 .selection {
     &_table {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         margin : 0px 20px 50px 20px;
         gap: 20px;
         
     } 
     
-    
-    
-    
     &_row {
 
-        background-color: #F6F6F6;
-        //position: relative;
+        @include shadow-box;
+        background-color: $bs-color;
         font-size: 16px;
         border-radius: 20px;
-        @include shadow-box;
         
         & .selection_container {
             
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: left;
-            //position: absolute;
+            @include flex-row-center-justify-left;
             gap: 20px;
             transform: translateX(-12px);
-            //left: -10px;
             
             .fa-solid {
-                color: #7E7E7E;
-                // left: 60px;
+                color: $color-card;
                 
             }
             
             .fa-solid:hover{
-                color: #9356DC;
+                color: $primaire;
             }
             .number {
         
-                background-color: #9356DC;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-center-center;
+                background-color: $primaire;
+                color: $number;
                 border-radius: 50%;
                 width: 24px;
                 height: 24px;
@@ -200,15 +169,7 @@
             }
     
         }
-        
-        
-        
-
-        
+       
     }
     
 }
-    
-
-
-

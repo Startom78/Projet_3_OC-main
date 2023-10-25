@@ -130,6 +130,7 @@ body {
 }
 
 .bouton {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   background-color: #9356DC;
   border: none;
   color: white;
@@ -143,7 +144,6 @@ body {
   margin-bottom: 40px;
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
 .bouton:hover {
@@ -205,15 +205,15 @@ footer .options .fa-handshake-angle {
 }
 
 .loader {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(255, 255, 255, 0.5333333333);
   margin: 0;
   z-index: 10000;
@@ -268,11 +268,11 @@ footer .options .fa-handshake-angle {
 }
 
 .description {
-  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  background-color: #F6F6F6;
 }
 .description h2 {
   margin-top: 10px;
@@ -295,7 +295,6 @@ footer .options .fa-handshake-angle {
 .cards {
   display: flex;
   flex-direction: column;
-  align-content: center;
   background-color: #F6F6F6;
   margin: auto;
   margin: 0px 10px 0px 10px;
@@ -304,16 +303,16 @@ footer .options .fa-handshake-angle {
   margin: 20px 0 20px 0;
 }
 .cards a {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   background-color: #F6F6F6;
   color: black;
   text-decoration: none;
   border-radius: 1rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 .cards a .card {
-  padding: 0px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 0px;
   overflow: hidden;
   position: relative;
 }
@@ -375,10 +374,10 @@ footer .options .fa-handshake-angle {
   gap: 20px;
 }
 .selection_row {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   background-color: #F6F6F6;
   font-size: 16px;
   border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .selection_row .selection_container {
   display: flex;
@@ -395,11 +394,11 @@ footer .options .fa-handshake-angle {
   color: #9356DC;
 }
 .selection_row .selection_container .number {
-  background-color: #9356DC;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #9356DC;
+  color: white;
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -469,6 +468,7 @@ img {
   border-bottom: solid 3px #99E2D0;
 }
 .menu .entrees .menu_plat {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   width: 100%;
   height: 72px;
@@ -476,7 +476,6 @@ img {
   padding-left: 10px;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 .menu .entrees .menu_plat:hover > .menu_plat_text {
@@ -515,7 +514,6 @@ img {
   height: 42px;
 }
 .menu .entrees .menu_checkbox {
-  position: absolute;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -524,12 +522,6 @@ img {
   height: 100%;
   background-color: #99E2D0;
   overflow: hidden;
-  /*&:hover .fa-circle-check{
-
-      transform: rotate(360deg);
-      transition-duration: 1000ms;
-
-  } */
 }
 .menu .entrees .menu_checkbox .fa-circle-check {
   color: white;
@@ -551,9 +543,9 @@ img {
 .menu .middle {
   animation-name: fadein;
   animation-duration: 1.5s;
+  animation-fill-mode: both;
   animation-delay: 800ms;
   animation-iteration-count: 1;
-  animation-fill-mode: both;
 }
 @keyframes fadein {
   0% {
@@ -566,8 +558,8 @@ img {
 .menu .ending {
   animation-name: fadein;
   animation-duration: 1.5s;
-  animation-delay: 1500ms;
   animation-fill-mode: both;
+  animation-delay: 1500ms;
 }
 @keyframes fadein {
   0% {

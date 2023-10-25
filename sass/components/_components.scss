@@ -1,21 +1,18 @@
 
 .hearts {
-    display: flex;
-    align-items: center;
+    @include flex-center;
     position: relative;
     font-size: 30px;
     margin-right: 40px;
     
     .fullheart {
-        color: white;
+        color: $number;
         -moz-text-stroke-width: 1px;
         -moz-text-stroke-color: black;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
                                 
         transition: opacity 0.25s ease-in-out;
-        //right: -80px;
-        //background: rgb(255,121,218);
         position: absolute;
 
     }
@@ -25,13 +22,12 @@
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -moz-text-stroke-width: 1px;
-        -moz-text-stroke-color: #9356DC;
+        -moz-text-stroke-color: $primaire;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #9356DC;
+        -webkit-text-stroke-color: $primaire;
 
         text-shadow: unset;
         color: transparent;
-        //color: #9356DC;
         opacity: 0;
 
         &:hover {
@@ -44,9 +40,10 @@
 
 .bouton {
 
+    @include shadow-box;
     background-color: $primaire;
     border: none;
-    color: white;
+    color: $number;
     margin-bottom: 10px;
     padding: 15px 15px 15px 15px;
     margin: 10px 10px 10px 10px;
@@ -57,7 +54,6 @@
     margin-bottom: 40px;
     background: rgb(147,86,220);
     background: linear-gradient(0deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
-    @include shadow-box;
     transition: 0.5s;
     &:hover {
         opacity: 0.8;
